@@ -17,11 +17,12 @@ header {
 
 .headercontainer {
     width: 1040px;
-    padding: 0px 20px;
+    padding: 0px 30px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: aquamarine; */
 }
 
 .headercontainerkiri {
@@ -45,10 +46,188 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 50px;
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     color: #171717;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #171717;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+#herosection {
+    background-image: linear-gradient(to bottom, #fafafa, #fff);
+    padding: 40px 0;
+    /* height: 100vh; */
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.herosectioncontent {
+    background-image: url("../pictures/herosection.png");
+    background-size: contain;
+    /* background-position: center; */
+    height: 530px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.herosectioncontent::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 530px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.herosectioncontent h6 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    background-color: #009ada;
+    padding: 10px 20px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    font-weight: 400;
+}
+
+.herosectioncontent h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    z-index: 2;
+    width: 500px;
+    line-height: 3.4rem;
+    font-weight: bold;
+}
+
+.herosectioncontent p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    color: white;
+    position: absolute;
+    top: 240px;
+    left: 30px;
+    z-index: 2;
+    width: 550px;
+}
+
+.herosectionketerangan {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    z-index: 2;
+}
+
+.herosectionketerangankiri {
+    border-right: 1px solid white;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.875rem;
+    padding-right: 80px;
+    line-height: 1.5rem;
+    align-self: center;
+    padding-top: 3px;
+}
+
+.herosectionketerangankiri span {
+    font-size: 0.875rem;
+    color: #d8d8d8;
+}
+
+.herosectionketerangantengah {
+    border-right: 1px solid white;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.875rem;
+    padding-right: 80px;
+    line-height: 1.5rem;
+    align-self: center;
+    padding-top: 3px;
+    margin-left: 10px;
+}
+
+.herosectionketerangantengah span {
+    font-size: 0.875rem;
+    color: #d8d8d8;
+}
+
+.herosectionketerangankanan {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.875rem;
+    padding-right: 80px;
+    line-height: 1.5rem;
+    align-self: center;
+    padding-top: 3px;
+    margin-left: 10px;
+}
+
+.herosectionketerangankanan span {
+    font-size: 0.875rem;
+    color: #d8d8d8;
+}
+
+.containerpart2 {
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#part2 {
+    background-image: linear-gradient(to bottom, #fafafa, #fff);
+    padding: 40px 0;
+}
+
+.part2wrapper {
+    /* width: 900px; */
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding: 0px 30px;
+}
+
+.part2wrapperkiri {
+    font-family: "instrument Sans", sans-serif;
+    font-size: 2.4rem;
+    color: #045374;
+    width: 300px;
+    line-height: 3.5rem;
+}
+
+.part2wrapperkanan {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #939191;
+    width: 420px;
+    text-align: right;
+    line-height: 1.9rem;
 }
